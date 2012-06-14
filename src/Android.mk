@@ -52,7 +52,7 @@ LOCAL_C_INCLUDES := $(libgtest_host_includes)
 LOCAL_CFLAGS += -O0
 
 LOCAL_MODULE := libgtest_host
-LOCAL_MODULE_TAGS := eng
+LOCAL_MODULE_TAGS := debug
 
 include $(BUILD_HOST_STATIC_LIBRARY)
 
@@ -72,7 +72,7 @@ LOCAL_CFLAGS += -O0
 LOCAL_STATIC_LIBRARIES := libgtest
 
 LOCAL_MODULE := libgtest_main_host
-LOCAL_MODULE_TAGS := eng
+LOCAL_MODULE_TAGS := debug
 
 include $(BUILD_HOST_STATIC_LIBRARY)
 
@@ -92,7 +92,7 @@ include external/stlport/libstlport.mk
 endif
 
 LOCAL_MODULE := libgtest
-LOCAL_MODULE_TAGS := eng
+LOCAL_MODULE_TAGS := debug
 
 include $(BUILD_STATIC_LIBRARY)
 
@@ -114,6 +114,6 @@ endif
 LOCAL_STATIC_LIBRARIES := libgtest
 
 LOCAL_MODULE := libgtest_main
-LOCAL_MODULE_TAGS := eng
+LOCAL_MODULE_TAGS := debug
 
 include $(BUILD_STATIC_LIBRARY)
